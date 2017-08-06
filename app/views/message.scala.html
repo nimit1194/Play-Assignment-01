@@ -1,0 +1,6 @@
+@()(implicit flash: Flash)
+
+@main("Welcome to SPY Ltd") {
+<h1>Welcome to SPY Ltd !!!!!!!!</h1>
+<h2>@flash.get("S").getOrElse(flash.get("E"))</h2>
+}
